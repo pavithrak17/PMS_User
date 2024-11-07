@@ -11,16 +11,19 @@ The **Placement Management System** is designed to streamline the placement proc
 ## Table of Contents
 - [About](#about)
 - [Technologies Used](#technologies-used)
+- [Frontend Technologies](#frontend-technologies)
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [User Module](#user-module)
+- [Frontend Demo](#frontend-demo)
 - [License](#license)
 - [Contact](#contact)
 
 ## About
 ---
-The Placement Management System is built using Java and Spring Boot. This backend application handles all server-side logic, database interactions, and RESTful API endpoints to support the functionalities of the Placement Management System.
+The Placement Management System is built using Java and Spring Boot for the backend and React.js for the frontend. The backend handles server-side logic, database interactions, and RESTful API endpoints, while the frontend provides a user-friendly interface for interaction.
+
 ---
 
 ## Technologies Used
@@ -32,21 +35,28 @@ The Placement Management System is built using Java and Spring Boot. This backen
 - **Maven**: Dependency management and build tool.  
 ---
 
+## Frontend Technologies
+---
+- **React.js**: JavaScript library for building user interfaces.
+- **Axios**: For making HTTP requests from the frontend.
+- **CSS**: Styling the frontend to ensure a responsive and user-friendly experience.
+
+---
+
 ## Installation
 
-To set up the backend on your local machine, follow these steps:
+To set up both the backend and frontend on your local machine, follow these steps:
 
-1. **Clone the repository:**
+### Backend Installation:
+1. **Clone the backend repository:**
    ```bash
    git clone https://github.com/pavithrak17/placement-management-system-backend.git
    ```
-   
-2. **Navigate to the project directory:**
+2. **Navigate to the backend project directory:**
    ```bash
    cd placement-management-system-backend
    ```
-
-3. **Configure the database:**
+3. **Configure the database** (MySQL):
    - Create a new MySQL database for the application.
    - Update the `application.properties` file with your database connection details:
      ```properties
@@ -54,20 +64,37 @@ To set up the backend on your local machine, follow these steps:
      spring.datasource.username=your_username
      spring.datasource.password=your_password
      ```
-
-4. **Build the application:**
+4. **Build and run the backend application:**
    ```bash
    mvn clean install
-   ```
-
-5. **Run the application:**
-   ```bash
    mvn spring-boot:run
    ```
 
+### Frontend Installation:
+1. **Clone the frontend repository:**
+   ```bash
+   git clone https://github.com/pavithrak17/placement-management-system-frontend.git
+   ```
+2. **Navigate to the frontend project directory:**
+   ```bash
+   cd placement-management-system-frontend
+   ```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+4. **Run the frontend application:**
+   ```bash
+   npm start
+   ```
+
+This will start the frontend application, which will be available on `http://localhost:3000`.
+
+---
+
 ## Usage
 
-Once the backend application is running, it will listen on the default port `8080`. You can interact with the API endpoints using tools like Postman or cURL.
+Once both the backend and frontend applications are running, you can interact with the API using the frontend interface at `http://localhost:3000`. The backend API will be available at `http://localhost:8080`.
 
 ## API Endpoints
 
@@ -83,12 +110,22 @@ Here are some key API endpoints:
 
 ## User Module
 ---
-The **User Module** is a key component of the Placement Management System, responsible for managing user-related functionalities. This module allows for user registration, authentication, and management of user profiles. 
+The **User Module** is a key component of the Placement Management System, responsible for managing user-related functionalities. This module allows for user registration, authentication, and management of user profiles.
 
 ### Key Features:
 - **User Registration**: New users can create accounts by providing necessary details, which are securely stored in the database.
 - **User Authentication**: Registered users can log in using their credentials, enabling access to the system.
 - **User Management**: Administrators can view, update, and delete user profiles as needed, ensuring effective management of user data.
+
+---
+
+## Frontend Demo
+### Demo Video
+Watch the demo of my project below:
+
+[![Project Demo](https://via.placeholder.com/360)](https://drive.google.com/file/d/1eoyyIvnbbS-qp0HO4rGxoS0tpT_n6VBo/view?usp=drive_link)
+
+Or alternatively, you can [click here to watch the video on Google Drive](https://drive.google.com/file/d/1eoyyIvnbbS-qp0HO4rGxoS0tpT_n6VBo/view?usp=drive_link).
 
 ---
 
@@ -105,5 +142,6 @@ For questions or feedback, please reach out to:<br>
 ---
 
 <p align="center">
-    Thank you for checking out the Placement Management System - Backend! 🎉
+    Thank you for checking out the Placement Management System! 🎉
 </p>
+```
