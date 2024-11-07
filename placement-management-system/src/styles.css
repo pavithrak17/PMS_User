@@ -1,0 +1,442 @@
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;;
+    background-image: url('images/ba.jpg'); /* Adjust to your background image path */
+    background-size: cover; /* Makes the image cover the entire screen */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Ensures the body height matches the viewport height */
+    overflow-y: auto; /* Prevents scrolling, if desired */
+    color:white;
+    background-color: #0a0a0a;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+h1 {
+    text-align: center;
+    color: #f9f6f6;
+    animation: fadeIn 2s ease-in-out; /* Add animation to the heading */
+}
+
+/* Animation for the text */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.navbar {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Position relative for dropdown handling */
+    z-index: 1000; /* Ensure navbar is above other elements */
+    animation: fadeIn 1s ease-in-out;
+    margin-right: 0px;
+}
+
+.navbar-title {
+    color: rgb(255, 252, 252);
+    font-size: 3.9rem; /* Increased font size for title */
+}
+
+.navbar-toggle {
+    display: none; /* Initially hide the toggle */
+    cursor: pointer;
+    font-size: 1.5rem; /* Larger toggle button */
+    color: white; /* Toggle icon color */
+}
+
+.navbar-links {
+    display: flex;
+    transition: max-height 0.3s ease; /* Smooth transition for dropdown */
+    padding: left 0px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 0px; /* Increased margin for better spacing */
+    transition: color 0.3s; /* Smooth transition on hover */
+    padding: 10px; /* Added padding for clickable area */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.navbar-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slight highlight on hover */
+}
+
+.navbar-links.active {
+    display: flex; /* Show links when active */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute; /* Absolute positioning for dropdown */
+    top: 60px; /* Position below navbar */
+    left: 0;
+    width: 100%; /* Full width dropdown */
+    border-radius: 0 0 4px 4px; /* Rounded bottom corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none; /* Hide links by default on small screens */
+        flex-direction: column; /* Stack links vertically */
+    }
+
+    .navbar-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .navbar-toggle {
+        display: block; /* Show toggle on small screens */
+    }
+}
+
+/* Navbar Search Form Styles */
+.navbar-search {
+    display: flex; /* Use flexbox for horizontal layout */
+    align-items: center; /* Center items vertically */
+    gap: 15px; /* Space between input and button */
+}
+
+.navbar-search input {
+    padding: 8px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 4px; /* Rounded corners */
+    flex: 1; /* Allows the input to grow */
+    min-width: 200px; /* Minimum width for the input field */
+}
+
+.navbar-search button {
+   background-color:transparent;
+    border: none; /* No border */
+    /* padding: 8px 12px; Button padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Center icon vertically */
+    
+}
+
+.navbar-search button:hover {
+    background-color:transparent; /* Button hover color */
+}
+
+.navbar-search button i {
+    font-size: 20px /* Icon size */
+}
+
+.navbar form {
+    flex-direction: row;
+    background-color: transparent;
+    padding :0px 0px;
+    margin :0px;
+}
+
+/* Home.css */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns content at the bottom */
+    align-items: center; /* Centers content horizontally */
+    height: 85vh; /* Full viewport height */
+    text-align: center; /* Centers text within the content */
+    background: url('images/cii.gif') no-repeat center center; /* Replace with your background image path */
+    background-size: cover;
+    color: white;
+    padding-bottom: 30px; /* Adjust as needed for spacing */
+  }
+  
+  h1 {
+    margin: 0;
+    text-align: center;
+    padding-top: 100px; /* Adjust as needed to control spacing */
+      
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns content at the bottom */
+    align-items: center; /* Centers content horizontally */
+    height: 85vh; /* Full viewport height */
+    background: url('images/Welcome\ to\ Synth.gif') no-repeat center bottom; /* Replace with your background image path */
+    background-size: cover;
+    color: white;
+    padding-bottom: 20px; /* Adjust as needed for spacing */
+  }
+
+/* Rest of your styles remain unchanged */
+h1 {
+    font-size: 3.5rem;
+    color: #f0f2f3;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    animation: fadeInUp 2s ease-in-out;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 2.6s ease-in-out forwards;
+}
+
+ul li strong {
+    color: #0105ff;
+}
+
+a {
+    color: #f6f9fa;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00fffb;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns content at the bottom */
+    align-items: center; /* Centers content horizontally */
+    height: 85vh; /* Full viewport height */
+    background: url('images/Welcome\ to\ Synth.gif') no-repeat top center; /* Replace with your background image path */
+    background-size: cover;
+    color: white;
+    padding-bottom: 20px; /* Adjust as needed for spacing */
+  }
+
+/* Rest of your styles remain unchanged */
+h1 {
+    font-size: 3.5rem;
+    color: #f0f2f3;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    animation: fadeInUp 2s ease-in-out;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 2.6s ease-in-out forwards;
+}
+
+ul li strong {
+    color: #f9065b;
+}
+
+a {
+    color: #f6f9fa;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00fffb;
+}
+
+/* Form container styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Slight transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease-in-out forwards; /* Fade-in and slide-up effect */
+    font-size: small;
+}
+
+/* Smooth fade-in and slide-up animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.user-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Space below the image */
+}
+
+.user-image img {
+    width: 100px; /* Set a width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: round the image */
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition on hover */
+}
+
+input:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.02); /* Subtle zoom effect on focus */
+    border-color: #f8057a;
+}
+
+button {
+    padding: 12px;
+    background-color: #f8057a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0408ea;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.table-container {
+    max-height: 400px; /* Set a max height for the table */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scrolling */
+    margin-top: 20px; /* Space from the top */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: justify;
+    animation: fadeInUp 0.6s ease-in-out forwards;
+    background: rgba(255, 255, 255, 0.2); /* semi-transparent white */
+    border-radius: 15px; /* rounded corners */
+    backdrop-filter: blur(10px); /* frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* support for Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* light border for edge definition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* shadow for depth */
+    overflow: hidden; /* round border cleanup */
+    color: white; /* text color for readability */
+}
+
+table th, table td {
+    padding: 12px 15px; /* padding inside cells */
+    border: 1px solid rgba(11, 5, 5, 0.2); /* subtle inner cell borders */
+    backdrop-filter: blur(10px); /* applies blur inside cells */
+    color: #ffffff; /* white text color for readability */
+}
+
+table th {
+    font-weight: bold;
+    background: rgba(14, 2, 244, 0.811); /* slight transparency for headers */
+}
+
+table td {
+    background: rgba(13, 13, 13, 0.91); /* slight transparency for table cells */
+}
+
+th, td {
+    border: 1px solid #f8f4f4;
+    padding: 8px;
+}
+
+th {
+    background-color: #ffffff;
+    color: rgb(6, 6, 6);
+    border: 1px solid #0a0a0a;;
+}
+
+td button {
+    margin: 0 5px;
+    background-color: #007BFF;
+    color: white; /* Ensure text color is readable */
+    border: none; /* Remove default button border */
+    padding: 5px 10px; /* Add padding for button */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+td button:hover {
+    background-color: #ff0368;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+        color: white;
+    }
+}
+.footer {
+    color: #fff;                          /* White text color */
+    text-align: center;
+    padding: 5px 0;                      /* Reduced padding for a tighter look */
+    font-size: 0.875rem;                  /* Default font size (adjusted) */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    backdrop-filter: blur(10px);         /* Blur effect */
+    border-radius: 10px;                 /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    list-style-type: none;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 600px) {
+    .footer {
+        font-size: 0.75rem !important;    /* Reduced font size for mobile */
+        padding: 4px 0;                   /* Adjust padding if necessary */
+ 
+    }
+}
