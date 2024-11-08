@@ -129,6 +129,14 @@ Or alternatively, you can [click here to watch the video on Google Drive](https:
 
 ---
 
+# Screenshots
+![image](https://github.com/user-attachments/assets/74d8362d-86df-447c-a4f3-bd19433b0ce8)
+![image](https://github.com/user-attachments/assets/8a85b0b7-e977-45db-bc31-8cf90967ba8e)
+![image](https://github.com/user-attachments/assets/d78727cd-0435-4956-8282-c747275dc7da)
+![image](https://github.com/user-attachments/assets/1f06c1b6-26cf-4b92-b8f3-8621317ac20a)
+![image](https://github.com/user-attachments/assets/f9ff682d-2ccd-48ac-9123-fe0ff5c2ed21)
+![image](https://github.com/user-attachments/assets/fe523396-0035-43d9-8a1d-8b3fe0b4ac8c)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
